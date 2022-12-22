@@ -1,0 +1,40 @@
+h1 {
+    @include cooper;
+    color: $primary;
+    font-size: 32px;
+}
+
+h2 {
+    @include cooper;
+    color: $primary;
+    font-size: 30px;
+}
+
+h3 {
+    @include cooper;
+    color: $primary;
+    font-size: 20px;
+}
+
+h5 {
+    @include brandon;
+    color: $primary;
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+p {
+    @include brandon-thin;
+    color: $primary;
+    font-size: 20px;
+}
+
+a {
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover {
+        color: $accent;
+    }
+}

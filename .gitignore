@@ -27,6 +27,3 @@ jspm_packages/
 
 # Apple
 .DS_Store
-
-# Preprocessors
-source/*
