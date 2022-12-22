@@ -52,4 +52,72 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "cooper";
+  src: url("../build/fonts/cooper_medium_bt-webfont.woff2") format("woff2"), url("../build/fonts/cooper_medium_bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "brandon";
+  src: url("../build/fonts/brandon_reg-webfont.woff2") format("woff2"), url("../build/fonts/brandon_reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "brandon-thin";
+  src: url("../build/fonts/brandon_thin-webfont.woff2") format("woff2"), url("../build/fonts/brandon_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "cooper", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #333333;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: "cooper", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #333333;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "cooper", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #333333;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: "brandon", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "brandon-thin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333333;
+  font-size: 20px;
+}
+
+a {
+  color: #333333;
+  text-decoration: underline;
+}
+a:hover {
+  color: #E3D973;
+}
+
 /*# sourceMappingURL=style.css.map */
