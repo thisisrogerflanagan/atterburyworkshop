@@ -1,3 +1,13 @@
+body,
+input,
+textarea,
+select,
+button,
+a {
+    @include brandon;
+    color: $primary;
+}
+
 h1 {
     @include cooper;
     color: $primary;
@@ -25,7 +35,7 @@ h5 {
 }
 
 p {
-    @include brandon-thin;
+    @include brandon;
     color: $primary;
     font-size: 20px;
 }
