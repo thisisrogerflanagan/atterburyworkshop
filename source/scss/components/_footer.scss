@@ -1,0 +1,45 @@
+.footer a {
+    @include brandon-thin;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer__brand,
+.footer__follow,
+.footer__shop {
+    margin-bottom: 30px;
+
+    h5 {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        li + li {
+            margin-top: 15px;
+        }
+    }
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+
+    img {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+.footer__copyright {
+    p {
+        @include brandon-thin;
+        font-size: 18px;
+    }
+}
+
+.footer__fine {
+    @include brandon-thin;
+    padding: 25px;
+    text-align: center;
+}

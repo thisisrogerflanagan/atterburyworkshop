@@ -74,6 +74,94 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 749px) {
+  .container {
+    padding: 25px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex__quarter,
+.flex__half {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .flex-container {
+    flex-direction: row;
+  }
+  .flex__quarter {
+    width: 25%;
+  }
+  .flex__half {
+    width: 50%;
+  }
+}
+.footer a {
+  font-family: "brandon-thin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__brand,
+.footer__follow,
+.footer__shop {
+  margin-bottom: 30px;
+}
+.footer__brand h5,
+.footer__follow h5,
+.footer__shop h5 {
+  margin-bottom: 15px;
+}
+.footer__brand ul li + li,
+.footer__follow ul li + li,
+.footer__shop ul li + li {
+  margin-top: 15px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.footer__logo img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.footer__copyright p {
+  font-family: "brandon-thin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.footer__fine {
+  font-family: "brandon-thin", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 25px;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+}
+
 body,
 input,
 textarea,
