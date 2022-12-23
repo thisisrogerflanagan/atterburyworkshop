@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'cooper';
-    src: url('../build/fonts/cooper_medium_bt-webfont.woff2') format('woff2'),
-         url('../build/fonts/cooper_medium_bt-webfont.woff') format('woff');
+    src: url('../../build/fonts/cooper_medium_bt-webfont.woff2') format('woff2'),
+         url('../../build/fonts/cooper_medium_bt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'brandon';
-    src: url('../build/fonts/brandon_reg-webfont.woff2') format('woff2'),
-         url('../build/fonts/brandon_reg-webfont.woff') format('woff');
+    src: url('../../build/fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('../../build/fonts/brandon_reg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'brandon-thin';
-    src: url('../build/fonts/brandon_thin-webfont.woff2') format('woff2'),
-         url('../build/fonts/brandon_thin-webfont.woff') format('woff');
+    src: url('../../build/fonts/brandon_thin-webfont.woff2') format('woff2'),
+         url('../../build/fonts/brandon_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
