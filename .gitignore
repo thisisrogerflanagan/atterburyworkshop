@@ -27,3 +27,7 @@ jspm_packages/
 
 # Apple
 .DS_Store
+
+# NPM
+package-lock.json
+package.json
