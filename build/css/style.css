@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  background-color: #F8F9F4;
   line-height: 1;
 }
 
@@ -210,14 +211,14 @@ a {
   font-family: "brandon", sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  color: #333333;
+  color: #231F20;
 }
 
 h1 {
   font-family: "cooper", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #333333;
+  color: #231F20;
   font-size: 32px;
 }
 
@@ -225,7 +226,7 @@ h2 {
   font-family: "cooper", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #333333;
+  color: #231F20;
   font-size: 30px;
 }
 
@@ -233,7 +234,7 @@ h3 {
   font-family: "cooper", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #333333;
+  color: #231F20;
   font-size: 20px;
 }
 
@@ -241,7 +242,7 @@ h5 {
   font-family: "brandon", sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  color: #333333;
+  color: #231F20;
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -251,16 +252,16 @@ p {
   font-family: "brandon", sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  color: #333333;
+  color: #231F20;
   font-size: 20px;
 }
 
 a {
-  color: #333333;
+  color: #231F20;
   text-decoration: underline;
 }
 a:hover {
-  color: #E3D973;
+  color: #1EB1DD;
 }
 
 /*# sourceMappingURL=style.css.map */
