@@ -1,0 +1,41 @@
+.header__logo {
+    img {
+        display: block;
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+.navigation {
+    text-transform: uppercase;
+
+    ul {
+        display: flex;
+
+        li + li {
+            margin-left: 15px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .header__logo {
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        width: 100%;
+
+        ul {
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    
+}

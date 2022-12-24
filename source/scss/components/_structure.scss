@@ -1,22 +1,30 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1300px;
+    max-width: 1200px;
     width: 100%;
 }
 
-.flex-container {
+.container--header {
+    align-items: center;
     display: flex;
 }
 
-
+.container--footer {
+    display: flex;
+}
 
 @media only screen and (max-width: 749px) {
     .container {
         padding: 25px;
     }
 
-    .flex-container {
+    .container--header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container--footer {
         flex-direction: column;
     }
 
@@ -28,8 +36,8 @@
 }
 
 @media only screen and (min-width: 750px) {
-    .flex-container {
-        flex-direction: row;
+    .container--header {
+        justify-content: space-between;
     }
 
     .flex__quarter {
