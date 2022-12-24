@@ -14,6 +14,10 @@
     display: flex;
 }
 
+.container--services {
+    display: flex;
+}
+
 @media only screen and (max-width: 749px) {
     .container {
         padding: 25px;
@@ -29,7 +33,8 @@
     }
 
     .flex__quarter,
-    .flex__half {
+    .flex__half,
+    .flex__threequarter {
         text-align: center;
         width: 100%;
     }
@@ -46,5 +51,9 @@
     
     .flex__half {
         width: 50%;
+    }
+
+    .flex__threequarter {
+        width: 75%;
     }
 }

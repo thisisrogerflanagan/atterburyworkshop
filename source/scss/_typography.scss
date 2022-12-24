@@ -12,6 +12,10 @@ a {
     color: $primary;
 }
 
+.super-header {
+    font-size: 100px;
+}
+
 h1 {
     @include cooper;
     color: $primary;
