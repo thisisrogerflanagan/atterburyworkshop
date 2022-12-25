@@ -97,6 +97,10 @@ table {
   display: flex;
 }
 
+.container--services {
+  display: flex;
+}
+
 @media only screen and (max-width: 749px) {
   .container {
     padding: 25px;
@@ -109,7 +113,8 @@ table {
     flex-direction: column;
   }
   .flex__quarter,
-.flex__half {
+.flex__half,
+.flex__threequarter {
     text-align: center;
     width: 100%;
   }
@@ -123,6 +128,9 @@ table {
   }
   .flex__half {
     width: 50%;
+  }
+  .flex__threequarter {
+    width: 75%;
   }
 }
 .header__logo img {
@@ -204,6 +212,11 @@ table {
   text-align: center;
 }
 
+.services__main,
+.services__aside {
+  padding: 25px;
+}
+
 body {
   font-size: 16px;
 }
@@ -218,6 +231,10 @@ a {
   font-weight: 700;
   line-height: 1.2;
   color: #231F20;
+}
+
+.super-header {
+  font-size: 100px;
 }
 
 h1 {
