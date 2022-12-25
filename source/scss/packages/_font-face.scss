@@ -26,6 +26,20 @@
 }
 
 @font-face {
+    font-family: 'proxima-nova-semibold', sans-serif;
+    src: url('../../build/fontsproximanova-semibold-webfont.woff2') format('woff2'),
+         url('../../build/fontsproximanova-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin proxima-semibold {
+    font-family: "proxima-nova-semibold", sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+@font-face {
     font-family: 'brandon';
     src: url('../../build/fonts/brandon_reg-webfont.woff2') format('woff2'),
          url('../../build/fonts/brandon_reg-webfont.woff') format('woff');

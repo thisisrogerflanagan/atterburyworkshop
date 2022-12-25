@@ -1,5 +1,5 @@
 .footer a {
-    @include brandon-thin;
+    @include proxima;
     font-size: 18px;
     text-decoration: none;
 }
@@ -33,13 +33,13 @@
 
 .footer__copyright {
     p {
-        @include brandon-thin;
+        @include proxima;
         font-size: 18px;
     }
 }
 
 .footer__fine {
-    @include brandon-thin;
+    @include proxima;
     padding: 25px;
     text-align: center;
 }

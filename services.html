@@ -23,25 +23,148 @@
 
 <body>
 
+  <header class="header" role="banner">
+    <div class="container container--header">
+      <a href="/" class="header__logo">
+        <h2>Atterbury Workshop</h2>
+      </a>
+      <nav class="navigation" role="navigation">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Shop</a>
+          </li>
+          <li>
+            <a href="/">Services</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main class="services" role="main">
     <div class="container container--services">
-      <div class="services__main flex__threequarter">
+      <div class="services__main">
         <h1 class="super-header">The Shop</h1>
+        <hr class="super-spacer" />
         <p>I’m available for limited logo design projects. Just the logo. Limited back-and-forth. Reasonable price. With a particular focus on elevating small businesses that can't or don't want to hire a full-blown agency. Let's keep this simple.</p>
         <p>By streamlining the process and being very upfront about expectations, I’m able to deliver you a logo quickly—at an afforable price. See more of my latest work.</p>
-        <img src="build/img/services-hero.jpg" alt="Screenshot of Atterbury's latest work" />
+        <hr class="super-spacer" />
+        <img class="services__highlight" src="build/img/services-hero.jpg" alt="Screenshot of Atterbury's latest work" />
+        <hr class="super-spacer" />
         <div class="breakdown">
-          <h3>Here's How it Works</h3\>
+          <h3>Here's How it Works</h3>
+          <div class="breakdown__grid">
+            <div class="breakdown__step">
+              <h2>
+                <span>
+                  <strong>1.</strong>
+                </span>
+                Tell me about your brand
+              </h2>
+              <p>I’ll gather info on your brand, goals, visusal vibe, competition, etc.</p>
+            </div>
+            <div class="breakdown__step">
+              <h2>
+                <span>
+                  <strong>2.</strong>
+                </span>
+                I'll sketch some ideas
+              </h2>
+              <p>Then I’ll share a quick round of rough directions.</p>
+            </div>
+            <div class="breakdown__step">
+              <h2>
+                <span>
+                  <strong>3.</strong>
+                </span>
+                We'll decide on a direction
+              </h2>
+              <p>Reviewing the rough concepts and overall visual goal.</p>
+            </div>
+          </div>
+          
         </div>
       </div>
-      <aside class="services__aside flex__quarter">
-        <div class="hours">
-          <h6>Open Everyday 8am-4pm</h6>
-          <h6>Pre-orders: Pick-up orders must be places at least 2 hours in advance / Courier delivery 24 hours in advance.</h6>
-        </div>
-      </aside>
     </div>
   </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container container--footer">
+      <div class="flex__quarter">
+        <div class="footer__brand">
+          <h5>Atterbury Workshop</h5>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Services</a>
+            </li>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__follow">
+          <h5>Follow Us</h5>
+          <ul>
+            <li>
+              <a href="/">Instagram</a>
+            </li>
+            <li>
+              <a href="/">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex__quarter">
+        <div class="footer__shop">
+          <h5>Shop</h5>
+          <ul>
+            <li>
+              <a href="/">Everything</a>
+            </li>
+            <li>
+              <a href="/">Prints</a>
+            </li>
+            <li>
+              <a href="/">Books</a>
+            </li>
+            <li>
+              <a href="/">Stickers</a>
+            </li>
+            <li>
+              <a href="/">Small Batch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex__half">
+        <div class="footer__copyright">
+          <a href="/" class="footer__logo">
+            <img src="build/img/logo.png" alt="Atterbury Workshop" />
+          </a>
+          <p>Supply &amp; design since 2023. Atterbury Workshop is a tiny design company and shop founded by accidental-entrepreneur and font dabbler, Roger Flanagan. We're based in Bellevue, Kentucky.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__fine">
+      <small>&copy; 2023 Atterbury Workshop LLC</small>
+      <span class="footer__spacer">&bull;</span>
+      <small>All rights reserved</small>
+      <span class="footer__spacer">&bull;</span>
+      <small>Made in Northern Kentucky</small>
+    </div>
+  </footer>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

@@ -1,12 +1,11 @@
 .header__logo {
-    img {
-        display: block;
-        max-width: 250px;
-        width: 100%;
-    }
+    text-decoration: none;
 }
 
 .navigation {
+    @include proxima-semibold;
+    font-size: 11px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
 
     ul {

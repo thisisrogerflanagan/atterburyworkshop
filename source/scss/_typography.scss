@@ -6,14 +6,14 @@ body,
 input,
 textarea,
 select,
-button,
-a {
-    @include brandon;
+button {
+    @include proxima;
     color: $primary;
 }
 
 .super-header {
-    font-size: 100px;
+    font-size: 12vw;
+    text-align: center;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h3 {
 }
 
 h5 {
-    @include brandon;
+    @include proxima-semibold;
     color: $primary;
     font-size: 16px;
     letter-spacing: .1em;
@@ -43,9 +43,11 @@ h5 {
 }
 
 p {
-    @include brandon;
+    @include proxima;
     color: $primary;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 
 a {

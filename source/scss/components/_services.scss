@@ -1,4 +1,53 @@
-.services__main,
-.services__aside {
+.services__main {
     padding: 25px;
+}
+
+.super-spacer {
+    border: none;
+    height: 50px;
+}
+
+.services__highlight {
+    border-radius: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+.breakdown {
+    text-align: center;
+
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+.breakdown__grid {
+    display: flex;
+    margin-top: 30px;
+}
+
+.breakdown__step {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    span {
+        color: $accent;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .breakdown__grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .breakdown__step {
+        width: 30%;
+    }
 }

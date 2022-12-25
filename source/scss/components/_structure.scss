@@ -8,6 +8,11 @@
 .container--header {
     align-items: center;
     display: flex;
+    padding: 25px;
+}
+
+.container--services {
+    max-width: 900px;
 }
 
 .container--footer {
