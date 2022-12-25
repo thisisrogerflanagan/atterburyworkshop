@@ -13,6 +13,19 @@
 }
 
 @font-face {
+    font-family: 'proxima-nova';
+    src: url('../../build/fonts/proxima_nova_font-webfont.woff2') format('woff2'),
+         url('../../build/fonts/proxima_nova_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin proxima {
+    font-family: "proxima-nova", sans-serif;
+    line-height: 1.2;
+}
+
+@font-face {
     font-family: 'brandon';
     src: url('../../build/fonts/brandon_reg-webfont.woff2') format('woff2'),
          url('../../build/fonts/brandon_reg-webfont.woff') format('woff');
