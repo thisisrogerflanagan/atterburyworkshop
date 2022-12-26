@@ -63,6 +63,12 @@ table {
   font-style: normal;
 }
 @font-face {
+  font-family: "casey";
+  src: url("../../build/fonts/casey_classic-webfont.woff2") format("woff2"), url("../../build/fonts/casey_classic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "proxima-nova";
   src: url("../../build/fonts/proxima_nova_font-webfont.woff2") format("woff2"), url("../../build/fonts/proxima_nova_font-webfont.woff") format("woff");
   font-weight: normal;
@@ -72,18 +78,6 @@ table {
   font-family: "proxima-nova-semibold", sans-serif;
   src: url("../../build/fontsproximanova-semibold-webfont.woff2") format("woff2"), url("../../build/fontsproximanova-semibold-webfont.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "brandon";
-  src: url("../../build/fonts/brandon_reg-webfont.woff2") format("woff2"), url("../../build/fonts/brandon_reg-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "brandon-thin";
-  src: url("../../build/fonts/brandon_thin-webfont.woff2") format("woff2"), url("../../build/fonts/brandon_thin-webfont.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
 }
 .container {
@@ -296,6 +290,13 @@ h1 {
   line-height: 1.2;
   color: #231F20;
   font-size: 32px;
+}
+
+.header__logo h1 {
+  font-family: "casey", serif;
+  line-height: 1.2;
+  color: #231F20;
+  font-size: 40px;
 }
 
 h2 {

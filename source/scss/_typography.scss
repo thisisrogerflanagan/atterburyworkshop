@@ -22,6 +22,12 @@ h1 {
     font-size: 32px;
 }
 
+.header__logo h1 {
+    @include casey;
+    color: $primary;
+    font-size: 40px;
+}
+
 h2 {
     @include cooper;
     color: $primary;
