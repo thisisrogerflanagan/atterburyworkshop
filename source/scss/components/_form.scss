@@ -14,6 +14,10 @@ input {
     font-size: 28px;
     margin: 0 10px;
     width: 24%;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 textarea {
@@ -24,4 +28,8 @@ textarea {
     margin-top: 25px;
     padding: 15px;
     width: 60%;
+
+    &:focus {
+        outline: none;
+    }
 }

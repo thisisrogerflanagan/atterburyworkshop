@@ -9,12 +9,18 @@
     max-width: 100%;
 }
 
-.breakdown {
+.breakdown,
+.contact {
     text-align: center;
 
     h3 {
         text-transform: uppercase;
     }
+}
+
+.contact {
+    border-top: 1px dotted lighten($primary, 20%);
+    padding-top: 50px;
 }
 
 .breakdown__grid {
