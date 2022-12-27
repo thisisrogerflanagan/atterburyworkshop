@@ -1,7 +1,3 @@
-.services__main {
-    padding: 25px;
-}
-
 .super-spacer {
     border: none;
     height: 50px;
@@ -13,7 +9,8 @@
     max-width: 100%;
 }
 
-.breakdown {
+.breakdown,
+.contact {
     text-align: center;
 
     h3 {
@@ -21,8 +18,14 @@
     }
 }
 
+.contact {
+    border-top: 1px dotted lighten($primary, 20%);
+    padding-top: 50px;
+}
+
 .breakdown__grid {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
@@ -40,10 +43,25 @@
     }
 }
 
+@media only screen and (max-width: 749px) {
+    .services__main {
+        padding: 10px;
+    }
+
+    .breakdown__grid {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 @media only screen and (min-width: 750px) {
+    .services__main {
+        padding: 25px;
+    }
+    
     .breakdown__grid {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
 
