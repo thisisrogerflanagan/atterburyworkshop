@@ -117,8 +117,8 @@ table {
     flex-direction: column;
   }
   .flex__quarter,
-.flex__half,
-.flex__threequarter {
+  .flex__half,
+  .flex__threequarter {
     text-align: center;
     width: 100%;
   }
@@ -320,6 +320,7 @@ textarea:focus {
   }
 }
 body {
+  background: #FBF9F6;
   font-size: 16px;
 }
 
@@ -334,7 +335,7 @@ button {
 }
 
 .super-header {
-  font-size: 12vw;
+  font-size: 62px;
   text-align: center;
 }
 
