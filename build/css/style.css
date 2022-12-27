@@ -156,6 +156,7 @@ table {
   margin-left: 15px;
 }
 .navigation a {
+  color: #231F20;
   text-decoration: none;
 }
 
@@ -177,7 +178,6 @@ table {
 .footer a {
   font-family: "proxima-nova", sans-serif;
   line-height: 1.2;
-  font-size: 18px;
   text-decoration: none;
 }
 
@@ -275,8 +275,23 @@ textarea:focus {
 }
 
 .contact {
-  border-top: 1px dotted #594f51;
   padding-top: 50px;
+  position: relative;
+}
+.contact:before, .contact:after {
+  content: "";
+  background: #2ABDEB;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.contact:before {
+  top: -10px;
+}
+.contact:after {
+  top: -5px;
 }
 
 .breakdown__grid {
@@ -292,7 +307,7 @@ textarea:focus {
   margin-bottom: 20px;
 }
 .breakdown__step span {
-  color: #1EB1DD;
+  color: #2ABDEB;
   display: block;
   margin-bottom: 15px;
 }
@@ -331,7 +346,7 @@ select,
 button {
   font-family: "proxima-nova", sans-serif;
   line-height: 1.2;
-  color: #231F20;
+  color: #5E5F61;
 }
 
 .super-header {
@@ -351,15 +366,16 @@ h1 {
   font-family: "casey", serif;
   line-height: 1.2;
   color: #231F20;
-  font-size: 40px;
+  font-size: 46px;
   letter-spacing: 1px;
+  transform: rotate(-1deg);
 }
 
 h2 {
   font-family: "cooper", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #231F20;
+  color: #5E5F61;
   font-size: 30px;
 }
 
@@ -376,7 +392,7 @@ h5 {
   font-family: "proxima-nova-semibold", sans-serif;
   font-weight: bold;
   line-height: 1.2;
-  color: #231F20;
+  color: #5E5F61;
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -385,18 +401,18 @@ h5 {
 p {
   font-family: "proxima-nova", sans-serif;
   line-height: 1.2;
-  color: #231F20;
+  color: #5E5F61;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 25px;
 }
 
 a {
-  color: #231F20;
+  color: #5E5F61;
   text-decoration: underline;
 }
 a:hover {
-  color: #1EB1DD;
+  color: #2ABDEB;
 }
 
 /*# sourceMappingURL=style.css.map */

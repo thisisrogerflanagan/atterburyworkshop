@@ -9,7 +9,7 @@ textarea,
 select,
 button {
     @include proxima;
-    color: $primary;
+    color: $secondary;
 }
 
 .super-header {
@@ -26,13 +26,14 @@ h1 {
 .header__logo h1 {
     @include casey;
     color: $primary;
-    font-size: 40px;
+    font-size: 46px;
     letter-spacing: 1px;
+    transform: rotate(-1deg);
 }
 
 h2 {
     @include cooper;
-    color: $primary;
+    color: $secondary;
     font-size: 30px;
 }
 
@@ -45,7 +46,7 @@ h3 {
 
 h5 {
     @include proxima-semibold;
-    color: $primary;
+    color: $secondary;
     font-size: 16px;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -53,14 +54,14 @@ h5 {
 
 p {
     @include proxima;
-    color: $primary;
+    color: $secondary;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 25px;
 }
 
 a {
-    color: $primary;
+    color: $secondary;
     text-decoration: underline;
 
     &:hover {
