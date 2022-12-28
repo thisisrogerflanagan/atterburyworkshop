@@ -81,6 +81,7 @@ table {
   font-style: normal;
 }
 .container {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -89,25 +90,16 @@ table {
 
 .container--header {
   align-items: center;
-  display: flex;
   padding: 25px;
 }
 
-.container--services {
+.container--main {
   max-width: 900px;
 }
 
-.container--footer {
-  display: flex;
-}
-
-.container--services {
-  display: flex;
-}
-
 @media only screen and (max-width: 749px) {
-  .container {
-    padding: 10px;
+  .main {
+    padding: 15px;
   }
   .container--header {
     flex-direction: column;
@@ -124,6 +116,9 @@ table {
   }
 }
 @media only screen and (min-width: 750px) {
+  .main {
+    padding: 25px;
+  }
   .container--header {
     justify-content: space-between;
   }
@@ -138,7 +133,13 @@ table {
   }
 }
 .header__logo {
+  font-family: "casey", serif;
+  line-height: 1.2;
+  color: #231F20;
+  font-size: 46px;
+  letter-spacing: 1px;
   text-decoration: none;
+  transform: rotate(-1deg);
 }
 
 .navigation {
@@ -235,10 +236,12 @@ input {
   display: inline-block;
   font-size: 28px;
   margin: 0 10px;
+  transition: all 0.25s;
   width: 24%;
 }
 input:focus {
   outline: none;
+  border-bottom: 1px solid #2ABDEB;
 }
 
 textarea {
@@ -248,10 +251,12 @@ textarea {
   height: 200px;
   margin-top: 25px;
   padding: 15px;
+  transition: all 0.25s;
   width: 60%;
 }
 textarea:focus {
   outline: none;
+  border: 1px solid #2ABDEB;
 }
 
 .super-spacer {
@@ -268,10 +273,6 @@ textarea:focus {
 .breakdown,
 .contact {
   text-align: center;
-}
-.breakdown h3,
-.contact h3 {
-  text-transform: uppercase;
 }
 
 .contact {
@@ -313,9 +314,6 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 749px) {
-  .services__main {
-    padding: 10px;
-  }
   .breakdown__grid {
     align-items: center;
     flex-direction: column;
@@ -323,9 +321,6 @@ textarea:focus {
   }
 }
 @media only screen and (min-width: 750px) {
-  .services__main {
-    padding: 25px;
-  }
   .breakdown__grid {
     flex-direction: row;
     justify-content: space-between;
@@ -349,26 +344,13 @@ button {
   color: #5E5F61;
 }
 
-.super-header {
-  font-size: 62px;
-  text-align: center;
-}
-
 h1 {
   font-family: "cooper", serif;
   font-weight: 400;
   line-height: 1.2;
   color: #231F20;
-  font-size: 30px;
-}
-
-.header__logo h1 {
-  font-family: "casey", serif;
-  line-height: 1.2;
-  color: #231F20;
-  font-size: 46px;
-  letter-spacing: 1px;
-  transform: rotate(-1deg);
+  font-size: 62px;
+  text-align: center;
 }
 
 h2 {
@@ -386,6 +368,7 @@ h3 {
   color: #231F20;
   font-size: 20px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h5 {

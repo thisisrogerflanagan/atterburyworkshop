@@ -12,23 +12,11 @@ button {
     color: $secondary;
 }
 
-.super-header {
-    font-size: 62px;
-    text-align: center;
-}
-
 h1 {
     @include cooper;
     color: $primary;
-    font-size: 30px;
-}
-
-.header__logo h1 {
-    @include casey;
-    color: $primary;
-    font-size: 46px;
-    letter-spacing: 1px;
-    transform: rotate(-1deg);
+    font-size: 62px;
+    text-align: center;
 }
 
 h2 {
@@ -42,6 +30,7 @@ h3 {
     color: $primary;
     font-size: 20px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 h5 {

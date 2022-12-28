@@ -13,10 +13,12 @@ input {
     display: inline-block;
     font-size: 28px;
     margin: 0 10px;
+    transition: all .25s;
     width: 24%;
 
     &:focus {
         outline: none;
+        border-bottom: 1px solid $accent;
     }
 }
 
@@ -27,9 +29,11 @@ textarea {
     height: 200px;
     margin-top: 25px;
     padding: 15px;
+    transition: all .25s;
     width: 60%;
 
     &:focus {
         outline: none;
+        border: 1px solid $accent;
     }
 }
