@@ -16,19 +16,47 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="build/css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <header class="header" role="banner">
+    <div class="container container--header">
+      <a href="/" class="header__logo">
+        <h1>atterbury workshop</h1>
+      </a>
+      <nav class="navigation" role="navigation">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Shop</a>
+          </li>
+          <li>
+            <a href="/">Services</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="services" role="main">
+    <div class="container container--services">
+      <div class="services__main">
+        <img class="services__highlight" src="build/img/about-hero.jpg" alt="Roger on stage at Clusterfest in San Francisco 2018" />
+        <hr class="super-spacer" />
+        <h1>Supply &amp; design since 2023. Atterbury Workshop is a tiny design company and shop founded by accidental-entrepreneur and font dabbler, Roger Flanagan.</h1>
+        
+      </div>
+    </div>
+  </main>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
