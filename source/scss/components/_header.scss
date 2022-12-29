@@ -1,12 +1,3 @@
-.header__logo {
-    @include casey;
-    color: $primary;
-    font-size: 46px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    transform: rotate(-1deg);
-}
-
 .navigation {
     @include proxima-semibold;
     font-size: 11px;

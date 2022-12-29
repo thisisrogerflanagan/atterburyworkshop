@@ -6,6 +6,7 @@ form {
 }
 
 input {
+    background: $background;
     border-bottom: 1px solid $primary;
     border-left: none;
     border-right: none;
@@ -23,6 +24,7 @@ input {
 }
 
 textarea {
+    background: $background;
     border-radius: 10px;
     display: inline-block;
     font-size: 28px;
@@ -30,10 +32,21 @@ textarea {
     margin-top: 25px;
     padding: 15px;
     transition: all .25s;
-    width: 60%;
 
     &:focus {
         outline: none;
         border: 1px solid $accent;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    textarea {
+        width: 60%;
     }
 }

@@ -43,7 +43,14 @@
 
 .footer__fine {
     @include proxima;
-    justify-content: flex-end;
+    color: $primary;
+    justify-content: center;
     padding: 25px;
-    text-align: right;
+    text-align: center;
+}
+
+.footer__spacer {
+    color: $secondary;
+    display: inline-block;
+    margin: 0 5px;
 }

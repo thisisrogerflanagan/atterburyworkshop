@@ -109,8 +109,8 @@ table {
     flex-direction: column;
   }
   .flex__quarter,
-  .flex__half,
-  .flex__threequarter {
+.flex__half,
+.flex__threequarter {
     text-align: center;
     width: 100%;
   }
@@ -132,16 +132,6 @@ table {
     width: 75%;
   }
 }
-.header__logo {
-  font-family: "casey", serif;
-  line-height: 1.2;
-  color: #231F20;
-  font-size: 46px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transform: rotate(-1deg);
-}
-
 .navigation {
   font-family: "proxima-nova-semibold", sans-serif;
   font-weight: bold;
@@ -157,7 +147,7 @@ table {
   margin-left: 15px;
 }
 .navigation a {
-  color: #231F20;
+  color: #393938;
   text-decoration: none;
 }
 
@@ -217,9 +207,16 @@ table {
 .footer__fine {
   font-family: "proxima-nova", sans-serif;
   line-height: 1.2;
-  justify-content: flex-end;
+  color: #393938;
+  justify-content: center;
   padding: 25px;
-  text-align: right;
+  text-align: center;
+}
+
+.footer__spacer {
+  color: #5E5F61;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 form {
@@ -230,7 +227,8 @@ form {
 }
 
 input {
-  border-bottom: 1px solid #231F20;
+  background: #F8F9F4;
+  border-bottom: 1px solid #393938;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -246,6 +244,7 @@ input:focus {
 }
 
 textarea {
+  background: #F8F9F4;
   border-radius: 10px;
   display: inline-block;
   font-size: 28px;
@@ -253,16 +252,25 @@ textarea {
   margin-top: 25px;
   padding: 15px;
   transition: all 0.25s;
-  width: 60%;
 }
 textarea:focus {
   outline: none;
   border: 1px solid #2ABDEB;
 }
 
+@media only screen and (max-width: 749px) {
+  textarea {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) {
+  textarea {
+    width: 60%;
+  }
+}
 .super-spacer {
   border: none;
-  height: 50px;
+  height: 30px;
 }
 
 .services__highlight {
@@ -345,11 +353,21 @@ button {
   color: #5E5F61;
 }
 
+.logo {
+  font-family: "casey", serif;
+  line-height: 1.2;
+  color: #393938;
+  font-size: 46px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transform: rotate(-1deg);
+}
+
 h1 {
   font-family: "cooper", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #231F20;
+  color: #393938;
   font-size: 62px;
   text-align: center;
 }
@@ -366,7 +384,7 @@ h3 {
   font-family: "proxima-nova-semibold", sans-serif;
   font-weight: bold;
   line-height: 1.2;
-  color: #231F20;
+  color: #393938;
   font-size: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -376,7 +394,7 @@ h5 {
   font-family: "proxima-nova-semibold", sans-serif;
   font-weight: bold;
   line-height: 1.2;
-  color: #5E5F61;
+  color: #393938;
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -389,6 +407,15 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin: 25px 0;
+}
+p span {
+  font-family: "proxima-nova-semibold", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #393938;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 a {

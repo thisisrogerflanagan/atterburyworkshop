@@ -12,6 +12,15 @@ button {
     color: $secondary;
 }
 
+.logo {
+    @include casey;
+    color: $primary;
+    font-size: 46px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transform: rotate(-1deg);
+}
+
 h1 {
     @include cooper;
     color: $primary;
@@ -35,7 +44,7 @@ h3 {
 
 h5 {
     @include proxima-semibold;
-    color: $secondary;
+    color: $primary;
     font-size: 16px;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -47,6 +56,14 @@ p {
     font-size: 18px;
     line-height: 1.5;
     margin: 25px 0;
+
+    span {
+        @include proxima-semibold;
+        color: $primary;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 }
 
 a {
