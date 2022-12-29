@@ -109,8 +109,8 @@ table {
     flex-direction: column;
   }
   .flex__quarter,
-.flex__half,
-.flex__threequarter {
+  .flex__half,
+  .flex__threequarter {
     text-align: center;
     width: 100%;
   }
@@ -266,6 +266,22 @@ textarea:focus {
 @media only screen and (min-width: 750px) {
   textarea {
     width: 60%;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .about__brand .logo {
+    font-size: 80px;
+    float: right;
+    line-height: 1;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .about__brand .logo {
+    float: left;
+    font-size: 100px;
+    line-height: 1;
+    padding-right: 50px;
   }
 }
 .super-spacer {
