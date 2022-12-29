@@ -43,6 +43,7 @@
 
 .footer__fine {
     @include proxima;
+    justify-content: flex-end;
     padding: 25px;
-    text-align: center;
+    text-align: right;
 }
