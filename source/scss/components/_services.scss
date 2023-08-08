@@ -21,7 +21,6 @@
     &:before,
     &:after {
         content: '';
-        background: $accent;
         height: 2px;
         left: 0;
         position: absolute;
@@ -52,7 +51,6 @@
     }
 
     span {
-        color: $accent;
         display: block;
         margin-bottom: 15px;
     }
