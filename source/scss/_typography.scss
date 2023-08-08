@@ -28,11 +28,18 @@ h5 {
 
 p {
     @include proxima;
+    color: $Peyote;
     
 
     span {
         
     }
+}
+
+p.opening {
+    font-size: 32px;
+    margin-bottom: 40px;
+    line-height: 1.3;
 }
 
 a {
