@@ -57,27 +57,15 @@ table {
 }
 
 @font-face {
-  font-family: "cooper";
-  src: url("../../build/fonts/cooper_medium_bt-webfont.woff2") format("woff2"), url("../../build/fonts/cooper_medium_bt-webfont.woff") format("woff");
+  font-family: "Grandsans";
+  src: url("../../build/fonts/GrandsansRegular.woff2") format("woff2"), url("../../build/fonts/GrandsansRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "casey";
-  src: url("../../build/fonts/casey_classic-webfont.woff2") format("woff2"), url("../../build/fonts/casey_classic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "proxima-nova";
+  font-family: "Proxima Nova";
   src: url("../../build/fonts/proxima_nova_font-webfont.woff2") format("woff2"), url("../../build/fonts/proxima_nova_font-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "proxima-nova-semibold", sans-serif;
-  src: url("../../build/fontsproximanova-semibold-webfont.woff2") format("woff2"), url("../../build/fontsproximanova-semibold-webfont.woff") format("woff");
-  font-weight: bold;
   font-style: normal;
 }
 .container {
@@ -133,8 +121,7 @@ table {
   }
 }
 .navigation {
-  font-family: "proxima-nova-semibold", sans-serif;
-  font-weight: bold;
+  font-family: "Grandsans", sans-serif;
   line-height: 1.2;
   font-size: 11px;
   letter-spacing: 2.5px;
@@ -167,7 +154,7 @@ table {
 }
 
 .footer a {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
   text-decoration: none;
 }
@@ -199,13 +186,13 @@ table {
 }
 
 .footer__copyright p {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
   font-size: 18px;
 }
 
 .footer__fine {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
   color: #393938;
   justify-content: center;
@@ -364,14 +351,12 @@ input,
 textarea,
 select,
 button {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
   color: #5E5F61;
 }
 
 .logo {
-  font-family: "casey", serif;
-  line-height: 1.2;
   color: #393938;
   font-size: 46px;
   letter-spacing: 1px;
@@ -380,26 +365,17 @@ button {
 }
 
 h1 {
-  font-family: "cooper", serif;
-  font-weight: 400;
-  line-height: 1.2;
   color: #393938;
   font-size: 62px;
   text-align: center;
 }
 
 h2 {
-  font-family: "cooper", serif;
-  font-weight: 400;
-  line-height: 1.2;
   color: #5E5F61;
   font-size: 30px;
 }
 
 h3 {
-  font-family: "proxima-nova-semibold", sans-serif;
-  font-weight: bold;
-  line-height: 1.2;
   color: #393938;
   font-size: 20px;
   letter-spacing: 1px;
@@ -407,9 +383,6 @@ h3 {
 }
 
 h5 {
-  font-family: "proxima-nova-semibold", sans-serif;
-  font-weight: bold;
-  line-height: 1.2;
   color: #393938;
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -417,7 +390,7 @@ h5 {
 }
 
 p {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
   color: #5E5F61;
   font-size: 18px;
@@ -425,9 +398,6 @@ p {
   margin: 25px 0;
 }
 p span {
-  font-family: "proxima-nova-semibold", sans-serif;
-  font-weight: bold;
-  line-height: 1.2;
   color: #393938;
   display: block;
   font-weight: bold;
