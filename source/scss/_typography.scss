@@ -13,7 +13,6 @@ button {
 }
 
 .logo {
-    @include casey;
     color: $primary;
     font-size: 46px;
     letter-spacing: 1px;
@@ -22,20 +21,17 @@ button {
 }
 
 h1 {
-    @include cooper;
     color: $primary;
     font-size: 62px;
     text-align: center;
 }
 
 h2 {
-    @include cooper;
     color: $secondary;
     font-size: 30px;
 }
 
 h3 {
-    @include proxima-semibold;
     color: $primary;
     font-size: 20px;
     letter-spacing: 1px;
@@ -43,7 +39,6 @@ h3 {
 }
 
 h5 {
-    @include proxima-semibold;
     color: $primary;
     font-size: 16px;
     letter-spacing: .1em;
@@ -58,7 +53,6 @@ p {
     margin: 25px 0;
 
     span {
-        @include proxima-semibold;
         color: $primary;
         display: block;
         font-weight: bold;

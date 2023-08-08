@@ -1,32 +1,18 @@
 @font-face {
-    font-family: 'cooper';
-    src: url('../../build/fonts/cooper_medium_bt-webfont.woff2') format('woff2'),
-         url('../../build/fonts/cooper_medium_bt-webfont.woff') format('woff');
+    font-family: 'Grandsans';
+    src: url('../../build/fonts/GrandsansRegular.woff2') format('woff2'),
+         url('../../build/fonts/GrandsansRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@mixin cooper {
-    font-family: "cooper", serif;
-    font-weight: 400;
+@mixin grandsans {
+    font-family: "Grandsans", sans-serif;
     line-height: 1.2;
 }
 
 @font-face {
-    font-family: 'casey';
-    src: url('../../build/fonts/casey_classic-webfont.woff2') format('woff2'),
-         url('../../build/fonts/casey_classic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@mixin casey {
-    font-family: "casey", serif;
-    line-height: 1.2;
-}
-
-@font-face {
-    font-family: 'proxima-nova';
+    font-family: 'Proxima Nova';
     src: url('../../build/fonts/proxima_nova_font-webfont.woff2') format('woff2'),
          url('../../build/fonts/proxima_nova_font-webfont.woff') format('woff');
     font-weight: normal;
@@ -34,20 +20,6 @@
 }
 
 @mixin proxima {
-    font-family: "proxima-nova", sans-serif;
-    line-height: 1.2;
-}
-
-@font-face {
-    font-family: 'proxima-nova-semibold', sans-serif;
-    src: url('../../build/fontsproximanova-semibold-webfont.woff2') format('woff2'),
-         url('../../build/fontsproximanova-semibold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@mixin proxima-semibold {
-    font-family: "proxima-nova-semibold", sans-serif;
-    font-weight: bold;
+    font-family: "Proxima Nova", sans-serif;
     line-height: 1.2;
 }
