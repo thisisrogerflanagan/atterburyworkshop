@@ -217,6 +217,45 @@ textarea:focus {
     width: 60%;
   }
 }
+.hero .container {
+  background-color: #FFFBED;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+.hero .container img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+.page-content p {
+  margin: 0 auto;
+  width: 63.9175257732%;
+}
+
+p.opening {
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+p.last {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.alt-quote {
+  color: #152B21;
+  font-family: "Grandsans", sans-serif;
+  line-height: 1.2;
+  font-size: 32px;
+  margin: 40px auto;
+  text-align: center;
+  width: 63.9175257732%;
+}
+
 .super-spacer {
   border: none;
   height: 30px;
@@ -301,7 +340,14 @@ button {
 p {
   font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
+  color: #152B21;
 }
+p.opening {
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
 a {
   text-decoration: underline;
 }
