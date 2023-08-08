@@ -57,6 +57,12 @@ table {
 }
 
 @font-face {
+  font-family: "Malaga";
+  src: url("../../build/fonts/MalagaOTBlackItalic.woff2") format("woff2"), url("../../build/fonts/MalagaOTBlackItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Grandsans";
   src: url("../../build/fonts/GrandsansRegular.woff2") format("woff2"), url("../../build/fonts/GrandsansRegular.woff") format("woff");
   font-weight: normal;
@@ -69,7 +75,6 @@ table {
   font-style: normal;
 }
 .container {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -77,8 +82,10 @@ table {
 }
 
 .container--header {
-  align-items: center;
+  box-sizing: border-box;
+  max-width: 1320px;
   padding: 25px;
+  position: relative;
 }
 
 .container--main {
@@ -120,6 +127,52 @@ table {
     width: 75%;
   }
 }
+#logo {
+  height: 48px;
+  margin: 0;
+  text-align: center;
+}
+#logo a {
+  display: inline-block;
+}
+#logo a img {
+  width: 50px;
+}
+
+nav[role=navigation] {
+  float: right;
+  margin: -32px 0 0 0;
+}
+nav[role=navigation] li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav[role=navigation] a {
+  font-family: "Grandsans", sans-serif;
+  line-height: 1.2;
+  color: #152B21;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+nav[role=navigation] a:hover {
+  color: #FFFBED;
+}
+
+#home {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#home a {
+  font-family: "Malaga", sans-serif;
+  line-height: 1.2;
+  color: #152B21;
+  font-size: 30px;
+}
+
 form {
   font-size: 28px;
   margin: 40px 20px 0;
