@@ -120,92 +120,6 @@ table {
     width: 75%;
   }
 }
-.navigation {
-  font-family: "Grandsans", sans-serif;
-  line-height: 1.2;
-  font-size: 11px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-}
-.navigation ul {
-  display: flex;
-}
-.navigation ul li + li {
-  margin-left: 15px;
-}
-.navigation a {
-  color: #393938;
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 749px) {
-  .header__logo {
-    margin-bottom: 20px;
-  }
-  .navigation {
-    width: 100%;
-  }
-  .navigation ul {
-    justify-content: center;
-  }
-}
-.footer {
-  padding: 50px 25px 25px;
-}
-
-.footer a {
-  font-family: "Proxima Nova", sans-serif;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.footer__brand,
-.footer__follow,
-.footer__shop {
-  margin-bottom: 30px;
-}
-.footer__brand h5,
-.footer__follow h5,
-.footer__shop h5 {
-  margin-bottom: 15px;
-}
-.footer__brand ul li + li,
-.footer__follow ul li + li,
-.footer__shop ul li + li {
-  margin-top: 15px;
-}
-
-.footer__logo {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-}
-.footer__logo img {
-  max-width: 60px;
-  width: 100%;
-}
-
-.footer__copyright p {
-  font-family: "Proxima Nova", sans-serif;
-  line-height: 1.2;
-  font-size: 18px;
-}
-
-.footer__fine {
-  font-family: "Proxima Nova", sans-serif;
-  line-height: 1.2;
-  color: #393938;
-  justify-content: center;
-  padding: 25px;
-  text-align: center;
-}
-
-.footer__spacer {
-  color: #5E5F61;
-  display: inline-block;
-  margin: 0 5px;
-}
-
 form {
   font-size: 28px;
   margin: 40px 20px 0;
@@ -214,8 +128,6 @@ form {
 }
 
 input {
-  background: #F8F9F4;
-  border-bottom: 1px solid #393938;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -227,11 +139,9 @@ input {
 }
 input:focus {
   outline: none;
-  border-bottom: 1px solid #2ABDEB;
 }
 
 textarea {
-  background: #F8F9F4;
   border-radius: 10px;
   display: inline-block;
   font-size: 28px;
@@ -242,7 +152,6 @@ textarea {
 }
 textarea:focus {
   outline: none;
-  border: 1px solid #2ABDEB;
 }
 
 @media only screen and (max-width: 749px) {
@@ -253,22 +162,6 @@ textarea:focus {
 @media only screen and (min-width: 750px) {
   textarea {
     width: 60%;
-  }
-}
-@media only screen and (max-width: 749px) {
-  .about__brand .logo {
-    font-size: 80px;
-    float: right;
-    line-height: 1;
-    padding-left: 40px;
-  }
-}
-@media only screen and (min-width: 750px) {
-  .about__brand .logo {
-    float: left;
-    font-size: 100px;
-    line-height: 1;
-    padding-right: 50px;
   }
 }
 .super-spacer {
@@ -293,7 +186,6 @@ textarea:focus {
 }
 .contact:before, .contact:after {
   content: "";
-  background: #2ABDEB;
   height: 2px;
   left: 0;
   position: absolute;
@@ -320,7 +212,6 @@ textarea:focus {
   margin-bottom: 20px;
 }
 .breakdown__step span {
-  color: #2ABDEB;
   display: block;
   margin-bottom: 15px;
 }
@@ -342,7 +233,6 @@ textarea:focus {
   }
 }
 body {
-  background: #FBF9F6;
   font-size: 16px;
 }
 
@@ -353,63 +243,14 @@ select,
 button {
   font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
-  color: #5E5F61;
-}
-
-.logo {
-  color: #393938;
-  font-size: 46px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transform: rotate(-1deg);
-}
-
-h1 {
-  color: #393938;
-  font-size: 62px;
-  text-align: center;
-}
-
-h2 {
-  color: #5E5F61;
-  font-size: 30px;
-}
-
-h3 {
-  color: #393938;
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-h5 {
-  color: #393938;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 p {
   font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
-  color: #5E5F61;
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 25px 0;
 }
-p span {
-  color: #393938;
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 a {
-  color: #5E5F61;
   text-decoration: underline;
-}
-a:hover {
-  color: #2ABDEB;
 }
 
 /*# sourceMappingURL=style.css.map */
