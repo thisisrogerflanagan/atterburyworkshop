@@ -12,6 +12,12 @@
     position: relative;
 }
 
+.container--footer {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+
 .container--main {
     max-width: 900px;
 }
@@ -25,37 +31,11 @@
         flex-direction: column;
         justify-content: center;
     }
-
-    .container--footer {
-        flex-direction: column;
-    }
-
-    .flex__quarter,
-    .flex__half,
-    .flex__threequarter {
-        text-align: center;
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 750px) {
-    .main {
-        padding: 25px;
-    }
 
-    .container--header {
+    .container--footer {
         justify-content: space-between;
-    }
-
-    .flex__quarter {
-        width: 25%;
-    }
-    
-    .flex__half {
-        width: 50%;
-    }
-
-    .flex__threequarter {
-        width: 75%;
     }
 }
