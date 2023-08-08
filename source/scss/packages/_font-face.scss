@@ -1,4 +1,17 @@
 @font-face {
+    font-family: 'Malaga';
+    src: url('../../build/fonts/MalagaOTBlackItalic.woff2') format('woff2'),
+         url('../../build/fonts/MalagaOTBlackItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin malaga {
+    font-family: "Malaga", sans-serif;
+    line-height: 1.2;
+}
+
+@font-face {
     font-family: 'Grandsans';
     src: url('../../build/fonts/GrandsansRegular.woff2') format('woff2'),
          url('../../build/fonts/GrandsansRegular.woff') format('woff');
