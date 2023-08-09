@@ -258,6 +258,7 @@ textarea:focus {
   background-color: #FFFBED;
   border-radius: 20px;
   box-sizing: border-box;
+  margin-bottom: 70px;
   margin-top: 70px;
   padding: 70px 20px;
 }
@@ -292,6 +293,32 @@ p.last {
   margin: 40px auto;
   text-align: center;
   width: 63.9175257732%;
+}
+
+.content-intro {
+  color: #152B21;
+  font-size: 24px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 0;
+}
+.product-list h3 {
+  color: #152B21;
+  font-size: 18px;
+}
+.product-list li {
+  text-align: center;
+  width: 30%;
+}
+.product-list li img {
+  border-radius: 8px;
+  display: block;
+  max-width: 100%;
 }
 
 .super-spacer {
@@ -373,6 +400,14 @@ select,
 button {
   font-family: "Proxima Nova", sans-serif;
   line-height: 1.2;
+}
+
+h2 {
+  font-family: "Grandsans", sans-serif;
+  line-height: 1.2;
+  color: #152B21;
+  font-size: 80px;
+  text-align: center;
 }
 
 p {
