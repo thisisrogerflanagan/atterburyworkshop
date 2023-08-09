@@ -403,6 +403,15 @@ p.last {
   z-index: 10;
 }
 
+.bio-pic {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 180px;
+  float: right;
+}
+
 .services__highlight {
   border-radius: 10px;
   display: block;
