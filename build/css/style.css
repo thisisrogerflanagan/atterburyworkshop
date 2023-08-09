@@ -327,7 +327,8 @@ textarea {
   width: 800px;
 }
 
-.page-content > p {
+.page-content > p,
+.page-content > h4 {
   margin: 0 auto;
   width: 63.9175257732%;
 }
@@ -377,6 +378,38 @@ p.last {
   border-radius: 8px;
   display: block;
   max-width: 100%;
+}
+
+.bigfoot {
+  color: #152B21;
+  display: inline-block;
+  position: relative;
+}
+.bigfoot:before {
+  background: url(../../build/img/bigfoot.gif) center center no-repeat;
+  background-size: contain;
+  content: "";
+  display: none;
+  height: 138px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 240px;
+  z-index: 0;
+}
+.bigfoot:hover::before {
+  display: block;
+  z-index: 10;
+}
+
+.bio-pic {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 180px;
+  float: right;
 }
 
 .services__highlight {
@@ -461,7 +494,7 @@ h4 {
   font-family: "Grandsans", sans-serif;
   line-height: 1.2;
   color: #152B21;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.5px;
 }
 h4 span {
