@@ -15,7 +15,10 @@ h1 {
 }
 
 h2 {
-    
+    @include grandsans;
+    color: $Peyote;
+    font-size: 80px;
+    text-align: center;
 }
 
 h3 {
