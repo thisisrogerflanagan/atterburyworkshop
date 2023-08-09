@@ -379,6 +379,29 @@ p.last {
   max-width: 100%;
 }
 
+.bigfoot {
+  color: #152B21;
+  display: inline-block;
+  position: relative;
+}
+.bigfoot:before {
+  background: url(../../build/img/bigfoot.gif) center center no-repeat;
+  background-size: contain;
+  content: "";
+  display: none;
+  height: 138px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 240px;
+  z-index: 0;
+}
+.bigfoot:hover::before {
+  display: block;
+  z-index: 10;
+}
+
 .services__highlight {
   border-radius: 10px;
   display: block;
