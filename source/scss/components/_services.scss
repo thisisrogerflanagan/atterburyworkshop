@@ -1,52 +1,22 @@
-.super-spacer {
-    border: none;
-    height: 30px;
-}
-
 .services__highlight {
     border-radius: 10px;
     display: block;
     max-width: 100%;
 }
 
-.breakdown,
-.contact {
-    text-align: center;
-}
-
-.contact {
-    padding-top: 50px;
-    position: relative;
-
-    &:before,
-    &:after {
-        content: '';
-        height: 2px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        width: 100%;
-    }
-
-    &:before {
-        top: -10px;
-    }
-
-    &:after {
-        top: -5px;
-    }
-}
-
 .breakdown__grid {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    justify-content: space-between;
+    margin: 40px 20px;
 }
 
 .breakdown__step {
+    margin-bottom: 40px;
     text-align: center;
 
-    h2 {
+    h4 {
         margin-bottom: 20px;
     }
 
@@ -54,6 +24,14 @@
         display: block;
         margin-bottom: 15px;
     }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.contact {
+    margin-bottom: 80px;
 }
 
 @media only screen and (max-width: 749px) {
