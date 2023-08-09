@@ -1,0 +1,30 @@
+.hero .container {
+    background-color: $Azeal;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 749px) {
+        margin-bottom: 35px;
+        padding: 25px;
+    }
+
+    @media only screen and (min-width: 750px) {
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding: 70px 20px;
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        width: 800px;
+    }
+}
+
+.alt-quote {
+    font-size: 32px;
+    margin: 40px 0;
+    text-align: center;
+}
+

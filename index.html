@@ -29,6 +29,9 @@
           <img src="build/img/logos/johnnymaitai.png" alt="Johnny Maitai, the official mascot of Atterbury Workshop" />
         </a>
       </div>
+      <a href="#" class="menu">
+        <img src="build/img/icons/icon-hamburger.png" width="19" class="menu-img">
+      </a>
       <nav class="navigation" role="navigation">
         <ul>
           <li id="home">
@@ -65,8 +68,8 @@
 
   <div class="main">
     <div class="container">
-      <h2>Fresh Goods</h2>
-      <p class="content-intro">Handmade, genuine products shipped worldwide.</p>
+      <h3>Fresh Goods</h3>
+      <p class="last">Handmade, genuine products shipped worldwide.</p>
       <ul class="product-list">
         <li>
           <img src="https://simplebits.shop/cdn/shop/files/va-abc-print_540x.png" alt="">
@@ -145,7 +148,24 @@
     </div>
   </footer>
 
-
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    /* toggle main nav in small screens */
+    $('a.menu').click(
+      function() {
+        $('nav[role="navigation"]').toggle();
+        $('header[role="banner"]').toggleClass('rule-off');
+    
+        if ($('img.menu-img').attr('src') == 'build/img/icons/icon-hamburger.png') {
+          $('img.menu-img').attr('src', 'build/img/icons/icon-x.png');
+        }
+        else {
+          $('img.menu-img').attr('src', 'build/img/icons/icon-hamburger.png');
+        }
+    
+        return false;
+      });
+    </script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

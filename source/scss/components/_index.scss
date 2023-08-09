@@ -1,44 +1,25 @@
-.hero .container {
-    background-color: $Azeal;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-bottom: 70px;
-    margin-top: 70px;
-    padding: 70px 20px;
-    
-    img {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-        width: 800px;
+
+
+.page-content {
+    margin: 0 auto;
+    width: 100%;
+
+    @media only screen and (min-width: 750px) {
+        width: 66%;
     }
 }
 
-.page-content > p,
-.page-content > h4 {
-    margin: 0 auto;
-    width: 63.917525773196%;
-}
-
 p.opening {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 40px;
     line-height: 1.3;
+
+    @media only screen and (min-width: 750px) {
+        font-size: 32px;
+    }
 }
 
-p.last {
-    font-size: 24px;
-    line-height: 1.4;
-}
 
-.alt-quote {
-    color: $Peyote;
-    @include grandsans;
-    font-size: 32px;
-    margin: 40px auto;
-    text-align: center;
-    width: 63.917525773196%;
-}
 
 .content-intro {
     color: $Peyote;
