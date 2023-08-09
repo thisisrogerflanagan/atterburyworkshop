@@ -1,8 +1,8 @@
 form {
+    display: flex;
     font-size: 28px;
     margin: 40px 20px 0;
     line-height: 2;
-    text-align: center;
 }
 
 input {
@@ -35,14 +35,48 @@ textarea {
     }
 }
 
+textarea {
+    border: 2px solid $Peyote;
+    border-radius: 10px;
+    display: block;
+    font-size: 20px;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 25px;
+    width: 100%;
+}
+
+.btn {
+    @include grandsans;
+    background-color: $Peyote;
+    border: none;
+    border-radius: 6px;
+    color: $Inertia;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
 @media only screen and (max-width: 749px) {
-    textarea {
-        width: 100%;
-    }
+    
 }
 
 @media only screen and (min-width: 750px) {
-    textarea {
-        width: 60%;
+    .contact form {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact__info {
+        margin-right: 100px;
+        width: 55%;
+    }
+
+    .contact__message {
+        flex: 1;
     }
 }
