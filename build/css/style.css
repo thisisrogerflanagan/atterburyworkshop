@@ -327,7 +327,8 @@ textarea {
   width: 800px;
 }
 
-.page-content > p {
+.page-content > p,
+.page-content > h4 {
   margin: 0 auto;
   width: 63.9175257732%;
 }
@@ -484,7 +485,7 @@ h4 {
   font-family: "Grandsans", sans-serif;
   line-height: 1.2;
   color: #152B21;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.5px;
 }
 h4 span {
