@@ -31,7 +31,6 @@ textarea {
 
     &:focus {
         outline: none;
-        
     }
 }
 
@@ -59,6 +58,10 @@ textarea {
     padding: 20px;
     text-decoration: none;
     width: 100%;
+
+    &:hover {
+        background-color: $Kyanite;
+    }
 }
 
 @media only screen and (max-width: 749px) {

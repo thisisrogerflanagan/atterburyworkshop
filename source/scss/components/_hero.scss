@@ -1,0 +1,54 @@
+.hero .container {
+    background-color: $Azeal;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 749px) {
+        margin-bottom: 35px;
+        padding: 25px;
+    }
+
+    @media only screen and (min-width: 750px) {
+        margin-bottom: 70px;
+        margin-top: 70px;
+        padding: 70px 20px;
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        width: 800px;
+    }
+}
+
+.alt-quote {
+    font-size: 32px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.bigfoot {
+    color: $Peyote;
+    display: inline-block;
+    position: relative;
+
+    &:before {
+        background: url(../../build/img/bigfoot.gif) center center no-repeat;
+        background-size: contain;
+        content: '';
+        display: none;
+        height: 138px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        width: 240px;
+        z-index: 0;
+    }
+
+    &:hover::before {
+        display: block;
+        z-index: 10;
+    }
+}
