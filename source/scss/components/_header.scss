@@ -10,16 +10,26 @@
 }
 
 #logo {
-    height: 50px;
-    margin: 0;
     text-align: center;
+
+    @media only screen and (max-width: 749px) {
+        height: 36px;
+        margin: 10px auto;
+        width: 180px;
+    }
+
+    @media only screen and (min-width: 750px) {
+        margin: 0;
+        width: 220px;
+    }
 
     a {
         display: inline-block;
         vertical-align: middle;
 
         img {
-            width: 50px;
+            display: block;
+            max-width: 100%;
         }
     }
 }
@@ -65,22 +75,6 @@ nav[role="navigation"] {
         &:hover {
             color: $Azeal;
         }
-    }
-}
-
-#home {
-    @media only screen and (min-width: 750px) {
-        left: 0;
-        margin: auto;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    a {
-        @include malaga;
-        color: $Peyote;
-        font-size: 30px;
     }
 }
 

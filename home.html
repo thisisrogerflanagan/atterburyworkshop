@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Atterbury Workshop</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="build/css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header class="header" role="banner">
+    <div class="container container--header">
+      <a href="#" class="menu">
+        <img src="build/img/icons/icon-hamburger.png" width="40" class="menu-img">
+      </a>
+    
+      <div id="logo">
+        <a href="/">
+          <img src="build/img/logos/atterbury-lockup.png" alt="Johnny Maitai, the official mascot of Atterbury Workshop" />
+        </a>
+      </div>
+      
+      <nav class="navigation" role="navigation">
+        <ul>
+          <li>
+            <a href="/">Fresh Goods</a>
+          </li>
+          <li>
+            <a href="/">Services</a>
+          </li>
+          <li>
+            <a href="/">Blog</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <article class="page-content">
+        <p class="opening">Atterbury is a small, but mighty studio, sign foundry, and goods shop created by accidental-entrepreneur and <a class="bigfoot" href="#">Sasquatch believer</a>, Roger Flanagan. We make original signs and prints for people like you. Handmade in Northern Kentucky.</p>
+        <p>We create unique-but-familiar products that'll help folks make interesting and fun things. Often inspired by turn-of-the-century matchbook labels and vintage comics, our signs and goods are genuine and shipped worldwide.</p>
+        <h3 class="alt alt-quote">Always Casual. Never Proper.</h3>
+        <p>Atterbury was founded at the beginning of 2023 with the goal of providing high-quality, handmade goods. We are, currently available for custom projects.</p>
+      </article>
+      <img src="build/img/hero/production.png" alt="Assembly line full of Atterbury products" />
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+      <div class="fresh-goods">
+        <h3>Fresh Goods</h3>
+        <p class="last">Handmade, genuine products shipped worldwide.</p>
+        <ul class="product-list">
+          <li>
+            <img src="https://simplebits.shop/cdn/shop/files/va-abc-print_540x.png" alt="">
+            <h4>Easy Coast Print</h4>
+            <p>$15.00</p>
+          </li>
+          <li>
+            <img src="https://simplebits.shop/cdn/shop/products/ec-print_540x.png" alt="">
+            <h4>Easy Coast Print</h4>
+            <p>$15.00</p>
+          </li>
+          <li>
+            <img src="https://simplebits.shop/cdn/shop/products/az-proof-mock_540x.png" alt="">
+            <h4>Easy Coast Print</h4>
+            <p>$15.00</p>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="newsletter">
+        <div class="page-content">
+          <h3>Newsletter</h3>
+          <p>Subscribe to Atterbury and we'll send you occasional updates about our signs, goods, and other interesting news&#8212;plus exclusive discounts, behind-the-scenes, and inspiration.</p>
+        </div>
+        <div class="newsletter__form">
+          <input name="email" type="text" placeholder="Email" />
+          <button type="submit" class="btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container container--footer">
+      
+        <div class="footer__media">
+          <img src="build/img/logos/footer.png" alt="" />
+          
+        </div>
+      
+      <div class="footer__links">
+        
+        <div class="footer__brand">
+          <label for="brand" class="brand-list">
+          <h5>Company</h5>
+        </label>
+        <input type="checkbox" id="brand" />
+          <ul class="link-list">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Services</a>
+            </li>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/">Support</a>
+            </li>
+          </ul>
+        </div>
+      
+      
+        <div class="footer__shop">
+          <label for="shop" class="shop-list">
+            <h5>Shop</h5>
+          </label>
+          <input type="checkbox" id="shop" />
+          <ul class="link-list">
+            <li>
+              <a href="/">Everything</a>
+            </li>
+            <li>
+              <a href="/">Prints</a>
+            </li>
+            <li>
+              <a href="/">Kids</a>
+            </li>
+            <li>
+              <a href="/">Small Batch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer__fine container">
+        <p>&copy; 2023 Atterbury Workshop LLC. Made in Northern Kentucky.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    /* toggle main nav in small screens */
+    $('a.menu').click(
+      function() {
+        $('nav[role="navigation"]').toggle();
+        $('header[role="banner"]').toggleClass('rule-off');
+    
+        if ($('img.menu-img').attr('src') == 'build/img/icons/icon-hamburger.png') {
+          $('img.menu-img').attr('src', 'build/img/icons/icon-x.png');
+        }
+        else {
+          $('img.menu-img').attr('src', 'build/img/icons/icon-hamburger.png');
+        }
+    
+        return false;
+      });
+    </script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

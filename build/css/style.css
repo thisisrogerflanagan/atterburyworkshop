@@ -106,12 +106,6 @@ table {
   width: 100%;
 }
 
-.container--footer {
-  box-sizing: border-box;
-  display: flex;
-  position: relative;
-}
-
 @media only screen and (max-width: 749px) {
   .main {
     padding: 15px;
@@ -119,11 +113,6 @@ table {
   .container--header {
     flex-direction: column;
     justify-content: center;
-  }
-}
-@media only screen and (min-width: 750px) {
-  .container--footer {
-    justify-content: space-between;
   }
 }
 .main {
@@ -146,16 +135,28 @@ table {
 }
 
 #logo {
-  height: 50px;
-  margin: 0;
   text-align: center;
+}
+@media only screen and (max-width: 749px) {
+  #logo {
+    height: 36px;
+    margin: 10px auto;
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  #logo {
+    margin: 0;
+    width: 220px;
+  }
 }
 #logo a {
   display: inline-block;
   vertical-align: middle;
 }
 #logo a img {
-  width: 50px;
+  display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 749px) {
@@ -203,22 +204,6 @@ nav[role=navigation] a:hover {
   color: #FFFBED;
 }
 
-@media only screen and (min-width: 750px) {
-  #home {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-#home a {
-  font-family: "Malaga", sans-serif;
-  line-height: 1.2;
-  color: #152B21;
-  font-size: 30px;
-}
-
 a.menu {
   display: block;
   left: 20px;
@@ -263,28 +248,162 @@ a.menu {
   text-align: center;
 }
 
+.bigfoot {
+  color: #152B21;
+  display: inline-block;
+  position: relative;
+}
+.bigfoot:before {
+  background: url(../../build/img/bigfoot.gif) center center no-repeat;
+  background-size: contain;
+  content: "";
+  display: none;
+  height: 138px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 240px;
+  z-index: 0;
+}
+.bigfoot:hover::before {
+  display: block;
+  z-index: 10;
+}
+
+.fresh-goods {
+  text-align: center;
+}
+.fresh-goods > p {
+  margin-top: 10px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 749px) {
+  .product-list {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .product-list {
+    margin: 60px 0 100px;
+  }
+}
+.product-list li {
+  text-align: center;
+}
+@media only screen and (max-width: 749px) {
+  .product-list li {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .product-list li {
+    width: 30%;
+  }
+}
+.product-list li img {
+  border-radius: 8px;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+.product-list li h4 {
+  margin-top: 10px;
+}
+.product-list li p {
+  color: #29B5CC;
+}
+
+.newsletter {
+  text-align: center;
+}
+.newsletter p {
+  margin-top: 10px;
+}
+
+.newsletter__form {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 749px) {
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .newsletter__form {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+}
+.newsletter__form input {
+  border: 1px solid #F6F6F7;
+  border-radius: 6px;
+  padding: 20px;
+}
+@media only screen and (max-width: 749px) {
+  .newsletter__form input {
+    margin: 0 0 15px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .newsletter__form input {
+    margin: 0 20px 0 0;
+    width: 60%;
+  }
+}
+.newsletter__form input:focus {
+  border-color: #29B5CC;
+}
+.newsletter__form .btn {
+  flex: 1;
+}
+
 .footer {
   background-color: #FFFBED;
   box-sizing: border-box;
   color: #152B21;
   margin-top: 60px;
-  padding: 60px 20px;
 }
-.footer h3 {
-  font-family: "Malaga", sans-serif;
-  line-height: 1.2;
-  color: #152B21;
-  font-size: 75px;
+@media only screen and (max-width: 749px) {
+  .footer {
+    padding: 20px;
+  }
 }
-.footer h5 {
-  font-family: "Grandsans", sans-serif;
-  line-height: 1.2;
-  color: #152B21;
-  font-size: 24px;
-  margin-top: 25px;
+@media only screen and (min-width: 750px) {
+  .footer {
+    padding: 60px 20px;
+  }
 }
-.footer p {
-  font-size: 20px;
+@media only screen and (max-width: 749px) {
+  .footer h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .footer h5:after {
+    background: url(../../build/img/icons/icon-toggle.png) center center no-repeat;
+    background-size: contain;
+    content: "";
+    height: 40px;
+    right: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 40px;
+    z-index: 0;
+  }
 }
 .footer li {
   font-size: 18px;
@@ -292,27 +411,86 @@ a.menu {
   letter-spacing: 0.5px;
 }
 .footer li a {
-  color: #152B21;
   text-decoration: none;
 }
 
-.footer__copyright {
-  width: 40%;
+@media only screen and (max-width: 749px) {
+  .footer__media {
+    width: 60%;
+  }
 }
-.footer__copyright img {
+@media only screen and (min-width: 750px) {
+  .footer__media {
+    width: 40%;
+  }
+}
+.footer__media img {
   max-width: 100%;
 }
 
-.footer__links {
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
+.footer__social {
+  margin-top: 10px;
+}
+.footer__social li {
+  display: inline-block;
+  margin-right: 8px;
+  width: 24px;
+}
+.footer__social img {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
 }
 
 .footer__brand,
 .footer__shop {
   box-sizing: border-box;
   padding: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .container--footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .link-list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .brand-list + input:checked ~ .link-list,
+  .shop-list + input:checked ~ .link-list {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+#brand,
+#shop {
+  display: none;
+  position: relative;
+}
+
+.footer__fine {
+  margin-top: 35px;
+}
+@media only screen and (max-width: 749px) {
+  .footer__fine {
+    text-align: center;
+  }
 }
 
 form {
@@ -375,6 +553,9 @@ textarea {
   text-decoration: none;
   width: 100%;
 }
+.btn:hover {
+  background-color: #29B5CC;
+}
 
 @media only screen and (min-width: 750px) {
   .contact form {
@@ -415,48 +596,6 @@ p.opening {
   font-size: 24px;
   margin-top: 15px;
   text-align: center;
-}
-
-.product-list {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 60px 0;
-}
-.product-list h3 {
-  color: #152B21;
-  font-size: 18px;
-}
-.product-list li {
-  text-align: center;
-  width: 30%;
-}
-.product-list li img {
-  border-radius: 8px;
-  display: block;
-  max-width: 100%;
-}
-
-.bigfoot {
-  color: #152B21;
-  display: inline-block;
-  position: relative;
-}
-.bigfoot:before {
-  background: url(../../build/img/bigfoot.gif) center center no-repeat;
-  background-size: contain;
-  content: "";
-  display: none;
-  height: 138px;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  width: 240px;
-  z-index: 0;
-}
-.bigfoot:hover::before {
-  display: block;
-  z-index: 10;
 }
 
 .bio-pic {
@@ -543,13 +682,8 @@ h3 {
   font-family: "Grandsans", sans-serif;
   line-height: 1.2;
   color: #152B21;
-  font-size: 26px;
+  font-size: 40px;
   text-align: center;
-}
-@media only screen and (min-width: 750px) {
-  h3 {
-    font-size: 40px;
-  }
 }
 
 h4 {
@@ -565,6 +699,14 @@ h4 span {
   text-align: center;
 }
 
+h5 {
+  font-family: "Grandsans", sans-serif;
+  line-height: 1.2;
+  color: #152B21;
+  font-size: 24px;
+  margin-top: 25px;
+}
+
 p {
   color: #152B21;
   font-size: 18px;
@@ -578,6 +720,7 @@ p {
 }
 
 a {
+  color: #152B21;
   text-decoration: underline;
 }
 
