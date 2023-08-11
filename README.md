@@ -3,3 +3,6 @@ Supply &amp; design since 2023. Atterbury Workshop is a tiny design company and 
 
 # Sass Configuration
 sass --watch src/scss/style.scss src/css/style.css
+
+# 11ty Configuration
+npm start => eleventy --serve
