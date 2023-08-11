@@ -1,0 +1,85 @@
+form {
+    display: flex;
+    font-size: 28px;
+    margin: 40px 20px 0;
+    line-height: 2;
+}
+
+input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: all .25s;
+    width: 24%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 28px;
+    height: 200px;
+    margin-top: 25px;
+    padding: 15px;
+    transition: all .25s;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    border: 2px solid $Peyote;
+    border-radius: 10px;
+    display: block;
+    font-size: 20px;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 25px;
+    width: 100%;
+}
+
+.btn {
+    @include grandsans;
+    background-color: $Peyote;
+    border: none;
+    border-radius: 6px;
+    color: $Inertia;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+        background-color: $Kyanite;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    
+}
+
+@media only screen and (min-width: 750px) {
+    .contact form {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact__info {
+        margin-right: 100px;
+        width: 55%;
+    }
+
+    .contact__message {
+        flex: 1;
+    }
+}
