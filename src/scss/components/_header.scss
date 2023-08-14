@@ -4,10 +4,13 @@ body.services a.nav__services {
   padding-bottom: 5px;
 }
 
-.container--header {
+.header .container {
   box-sizing: border-box;
   position: relative;
-  padding: 10px 0;
+
+  @media only screen and (max-width: 749px) {
+    padding: 10px 15px;
+  }
 
   @media only screen and (min-width: 750px) {
     max-width: 1320px;
