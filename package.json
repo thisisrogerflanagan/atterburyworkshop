@@ -1,0 +1,23 @@
+{
+  "name": "atterburyworkshop",
+  "version": "1.0.0",
+  "description": "Supply & design since 2023. Atterbury is a small, but mighty studio, sign foundry, and goods shop created by accidental-entrepreneur and Sasquatch believer, Roger Flanagan. We make original signs and prints for people like you. Handmade in Northern Kentucky.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisrogerflanagan/atterburyworkshop.git"
+  },
+  "author": "Roger Flanagan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisisrogerflanagan/atterburyworkshop/issues"
+  },
+  "homepage": "https://github.com/thisisrogerflanagan/atterburyworkshop#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
